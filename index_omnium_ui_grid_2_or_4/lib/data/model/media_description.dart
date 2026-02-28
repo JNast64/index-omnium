@@ -1,0 +1,5 @@
+sealed class MediaDescription{ const MediaDescription(); }
+class MovieTvDescription extends MediaDescription{ final String synopsis; final List<String>? genres; final int? runtimeMinutes; final List<String>? directors; final List<String>? cast; const MovieTvDescription({required this.synopsis, this.genres, this.runtimeMinutes, this.directors, this.cast}); }
+class BookDescription extends MediaDescription{ final String synopsis; final List<String> authors; final int? pageCount; final String? publisher; const BookDescription({required this.synopsis, required this.authors, this.pageCount, this.publisher}); }
+class GameDescription extends MediaDescription{ final String summary; final List<String>? platforms; final List<String>? developers; const GameDescription({required this.summary, this.platforms, this.developers}); }
+class MusicDescription extends MediaDescription{ final String? notes; final String artist; final String? album; final int? durationSec; const MusicDescription({required this.artist, this.album, this.durationSec, this.notes}); }

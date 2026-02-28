@@ -1,0 +1,2 @@
+import 'package:flutter/material.dart';
+class RatingStars extends StatelessWidget{ final double rating; final int max; const RatingStars({super.key, required this.rating, this.max=5}); @override Widget build(BuildContext c){ final full=rating.floor(); final half=(rating-full)>=0.5; return Row(mainAxisSize: MainAxisSize.min, children:[ for(int i=0;i<full;i++) const Icon(Icons.star, size:16), if(half) const Icon(Icons.star_half, size:16), for(int i=0;i<max-full-(half?1:0); i++) const Icon(Icons.star_border, size:16), ]); }}

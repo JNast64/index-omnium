@@ -1,0 +1,30 @@
+name: index_omnium_ui_grid_2_or_4
+description: Flutter UI with 2/4 column media grid and typed descriptions
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Existing
+  go_router: ^14.2.0
+  reorderable_grid_view: ^2.2.8
+
+  # HTTP for TMDB / Google Books / IGDB / Spotify
+  http: ^1.2.0
+
+  # Firebase – versions aligned with the current Flutter BoM
+  # (Dart >= 3.2, Flutter >= 3.3) :contentReference[oaicite:1]{index=1}
+  firebase_core: ^4.2.1
+  firebase_auth: ^6.1.2
+  cloud_firestore: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

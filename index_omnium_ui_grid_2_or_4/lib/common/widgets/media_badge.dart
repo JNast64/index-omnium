@@ -1,0 +1,2 @@
+import 'package:flutter/material.dart';
+class MediaBadge extends StatelessWidget{ final String type; const MediaBadge({super.key, required this.type}); @override Widget build(BuildContext c){ final map={'movie':Icons.movie,'tv':Icons.tv,'song':Icons.music_note,'book':Icons.menu_book,'game':Icons.sports_esports}; return Chip(avatar: Icon(map[type]??Icons.category, size:18), label: Text(type.toUpperCase())); }}

@@ -1,0 +1,2 @@
+import 'package:flutter/material.dart';
+class EmptyState extends StatelessWidget{ final String title; final String? message; const EmptyState({super.key, this.title='Nothing here yet', this.message}); @override Widget build(BuildContext c)=>Center(child:Padding(padding: const EdgeInsets.all(32), child: Column(mainAxisSize: MainAxisSize.min, children:[ const Icon(Icons.inbox, size:48), const SizedBox(height:12), Text(title, style: Theme.of(c).textTheme.titleLarge), if(message!=null)...[ const SizedBox(height:8), Text(message!, textAlign: TextAlign.center)], ]))); }

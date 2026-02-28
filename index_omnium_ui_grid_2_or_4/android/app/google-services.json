@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "318857210338",
+    "project_id": "index-omnium",
+    "storage_bucket": "index-omnium.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318857210338:android:a78eec5a714f10137071bb",
+        "android_client_info": {
+          "package_name": "com.example.index_omnium_ui_grid_2_or_4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7IsZhvOeVWlmEPdHWdPs4lB1lCYVPNqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
